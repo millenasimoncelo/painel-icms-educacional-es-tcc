@@ -51,9 +51,8 @@ html, body, [class*="css"] { font-family: 'Montserrat', sans-serif; color:#5F616
 # ============================
 import os
 
-except Exception:
-    st.sidebar.markdown("### 🟣 Pós-graudação em Mineração de Dados Educacionais - IFES")
-st.sidebar.title("Navegação")
+st.sidebar.markdown("### 🟣 Pós-graduação em Mineração de Dados Educacionais - IFES")
+
 
 menu = st.sidebar.radio(
     "Escolha a seção:",
@@ -652,6 +651,7 @@ st.markdown(
     "<p style='text-align:center;color:#5F6169;'>Fonte: Base Painel IQE (2023–2024) – Pós-graduação em Mineração de Dados Educacionais – IFES</p>",
     unsafe_allow_html=True
 )
+
 
 
 
