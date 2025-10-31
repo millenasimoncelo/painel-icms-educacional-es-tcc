@@ -51,9 +51,6 @@ html, body, [class*="css"] { font-family: 'Montserrat', sans-serif; color:#5F616
 # ============================
 import os
 
-try:
-    logo_path = os.path.join("assets", "logotipo_zetta_branco.png")
-    st.sidebar.image(logo_path, use_container_width=True)
 except Exception:
     st.sidebar.markdown("### 🟣 Pós-graudação em Mineração de Dados Educacionais - IFES")
 st.sidebar.title("Navegação")
@@ -365,12 +362,13 @@ elif menu == "📊 IQE":
 
         st.plotly_chart(fig, use_container_width=True)
         st.markdown(
-    
-            "<p style='text-align:center;color:#5F6169;'>Fonte: Base Painel IQE (2023–2024) – Zetta Inteligência em Dados</p>",
-            unsafe_allow_html=True
+   
+            "<p style='text-align:center;color:#5F6169;'>Painel desenvolvido no âmbito da <b>Pós-graduação em Mineração de Dados Educacionais – IFES</b><br>Autoras: Millena Simoncelo de Lima, Débora Resende Maranhão e Luciene Dellaqua Bermamin</p>",
+         unsafe_allow_html=True
         )
 
-        # ---------------------------------------------------------
+               
+    # ---------------------------------------------------------
     # 3️⃣ IQEF DETALHADO – Radar + Barras ΔDESVFSEt
     # ---------------------------------------------------------
     with tab_iqef:
@@ -651,17 +649,9 @@ elif menu == "📊 IQE":
 # RODAPÉ
 # ---------------------------------------------------------
 st.markdown(
-    """
-    <hr style='margin-top:40px;'>
-    <div style='text-align:center; color:#7E7E7E; font-size:13px;'>
-        Desenvolvido por <b>Zetta Inteligência em Dados</b> · Painel Educacional <b>IQE ES</b> · 2025
-    </div>
-    """,
+    "<p style='text-align:center;color:#5F6169;'>Fonte: Base Painel IQE (2023–2024) – Pós-graduação em Mineração de Dados Educacionais – IFES</p>",
     unsafe_allow_html=True
 )
-
-
-
 
 
 
