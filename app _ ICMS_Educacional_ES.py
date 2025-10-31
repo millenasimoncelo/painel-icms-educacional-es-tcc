@@ -49,7 +49,7 @@ html, body, [class*="css"] { font-family: 'Montserrat', sans-serif; color:#5F616
 # ============================
 # SIDEBAR PRINCIPAL
 # ============================
-st.sidebar.image("assets/Logotipo Zetta branco sem fundo (2).png", use_container_width=True)
+st.sidebar.image("assets/logotipo_zetta_branco.png", use_container_width=True)
 st.sidebar.title("Navegação")
 
 menu = st.sidebar.radio(
