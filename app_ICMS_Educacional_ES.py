@@ -213,8 +213,9 @@ elif menu == "📊 IQE":
             """, unsafe_allow_html=True)
 
         st.divider()
+      
         st.markdown(
-            "<p style='text-align:center;color:#5F6169;'>Painel desenvolvido por <b>Zetta Inteligência em Dados</b></p>",
+            "<p style='text-align:center;color:#5F6169;'>Painel desenvolvido no âmbito da <b>Pós-graduação em Mineração de Dados Educacionais – IFES</b></p>",
             unsafe_allow_html=True
         )
 
@@ -651,6 +652,7 @@ st.markdown(
     "<p style='text-align:center;color:#5F6169;'>Fonte: Base Painel IQE (2023–2024) – Pós-graduação em Mineração de Dados Educacionais – IFES</p>",
     unsafe_allow_html=True
 )
+
 
 
 
