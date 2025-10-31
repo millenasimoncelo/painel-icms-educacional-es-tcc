@@ -49,7 +49,13 @@ html, body, [class*="css"] { font-family: 'Montserrat', sans-serif; color:#5F616
 # ============================
 # SIDEBAR PRINCIPAL
 # ============================
-st.sidebar.image("assets/logotipo_zetta_branco.png", use_container_width=True)
+import os
+
+try:
+    logo_path = os.path.join("assets", "logotipo_zetta_branco.png")
+    st.sidebar.image(logo_path, use_container_width=True)
+except Exception:
+    st.sidebar.markdown("### 🟣 Zetta Inteligência em Dados")
 st.sidebar.title("Navegação")
 
 menu = st.sidebar.radio(
@@ -652,6 +658,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 
