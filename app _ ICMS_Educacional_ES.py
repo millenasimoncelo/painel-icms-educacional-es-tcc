@@ -365,6 +365,7 @@ elif menu == "📊 IQE":
 
         st.plotly_chart(fig, use_container_width=True)
         st.markdown(
+    
             "<p style='text-align:center;color:#5F6169;'>Fonte: Base Painel IQE (2023–2024) – Zetta Inteligência em Dados</p>",
             unsafe_allow_html=True
         )
@@ -658,6 +659,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 
