@@ -11,7 +11,7 @@ import plotly.express as px
 # CONFIGURAÇÕES GERAIS
 # ============================
 st.set_page_config(
-    page_title="Painel IQE – Zetta Inteligência em Dados",
+    page_title="Painel IQE – Pós-graudação em Mineração de Dados Educacionais - IFES",
     page_icon="📊",
     layout="wide"
 )
@@ -55,7 +55,7 @@ try:
     logo_path = os.path.join("assets", "logotipo_zetta_branco.png")
     st.sidebar.image(logo_path, use_container_width=True)
 except Exception:
-    st.sidebar.markdown("### 🟣 Zetta Inteligência em Dados")
+    st.sidebar.markdown("### 🟣 Pós-graudação em Mineração de Dados Educacionais - IFES")
 st.sidebar.title("Navegação")
 
 menu = st.sidebar.radio(
@@ -84,7 +84,7 @@ if menu == "📘 Entenda o ICMS Educacional":
     })
 
     st.dataframe(dados_icms, use_container_width=True, hide_index=True)
-    st.caption("Fonte: SEDU/ES – Adaptado por Zetta Inteligência em Dados")
+    st.caption("Fonte: SEDU/ES")
 
 # ============================
 # SEÇÃO 2 – PAINEL IQE
@@ -658,6 +658,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 
